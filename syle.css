@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(0, 150, 57);
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 800;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav_link {
+    padding: 15px;
+}
+
+#logo {
+    width: 7rem;
+    padding-bottom: 5px;
+}
+
+#top_pic img {
+    padding-top: 5rem;
+    width: 100%; 
+    background-color: black;
+}
+
+#top_pic {
+    background-color: black;
+}
+
+
+
+#manifesto {
+    background-color: black;
+    display: block;
+}
+
+#manifesto img {
+    width: 100%;
+}
+
+
+
+
+#thirst {
+    width: 100%;
+}
+
+#thirst img {
+    width: 100%;
+}
+
+
+
+
+
+#media_youtube {
+    display: block;
+}
+
+#media_videos {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.artists {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.empire {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+#lemon {
+    width: 100%;
+}
+
+#lemon img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#most_wanted {
+    background-image: url(./assets/most_wanted_background.PNG);
+    height: 40rem;
+}
+
+#most_wanted {
+    display: flex;
+}
+
+#first_half {
+    width: 50%;
+    display: block;
+    margin-left: 5%;
+}
+
+#seconf_half {
+    width: 50%;
+    display: block;
+}
+
+#bottle {
+    height: 80%;
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+#thirsts_text {
+    height: 17rem;
+    padding: 30% 10% 4.5% 10%;
+}
+
+#buy_now_button {
+    color: white;
+    font-weight: 800;
+    border: solid 1px white;
+    padding: 0.5rem;
+    background-image: url(./assets/most_wanted_background.PNG);
+    width: 8rem;
+    height: 2.5rem;
+    margin: 5% 100% 0% 35%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#follow_us {
+    background-color: black;
+
+}
+
+#banner {
+    width: 100%;
+}
+
+#insperational_table {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.insperational_pic {
+    padding: 1%;
+    width: 90%;
+    height: auto;
+}
+
+
+
+
+
+
+
+#media_music {
+    background-image: url(./assets/Gray-texture-backgrounds.jpg);
+    display: block;
+    color: black;
+}
+
+#music_table {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: block;
+}
+
+#part1 {
+    width: 40%;
+}
+
+#part2 {
+    width: 60%;
+}
+
+
+#music_table img {
+    width: 80%;
+}
+
+#music_table p{
+    width: 80%;
+    font-weight: 900;
+    font-size: large;
+}
+
+#music_table iframe {
+    margin-top:10% ;
+}
+
+#music_table button {
+    color: white;
+    background-color: rgb(0, 150, 57);
+    border: solid 2px black;
+    height: 4rem;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 900;
+    font-size: large;
+}
+
+
+
+
+
+#vote_your_fav div {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+    
+
+}
+
+#voting_table {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.vote_button {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+
+
+
+footer {
+    background-color: rgb(0, 150, 57);
+    color: white;
+    display: block;
+}
+
+#very_bottom {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+footer #copyright{
+    text-align: center;
+}
+
+.slide img{
+    width: 10%;
+    border: solid 2px black;
+    border-radius: 100%;
+    background-color: black;
+    float: right;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+/*everything been set up for 1200 px plus*/
+
+/*next break from 1200px to 600px*/
+
+/*last break is 600px and below*/
+
+
