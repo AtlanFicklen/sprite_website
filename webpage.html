@@ -127,12 +127,12 @@
 
                 <div id="spotify_playlist">
                     <iframe src="https://open.spotify.com/embed/playlist/0F9GnzKQchH4mZ56dysDJa" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <button>VISIT OUR PLAYLIST</button>
+                    <button onClick="parent.open('https://open.spotify.com/playlist/0F9GnzKQchH4mZ56dysDJa?si=GSBGX9_JTiSqzSZ0eaUqwQ')">VISIT OUR PLAYLIST</button>
                 </div>
 
                 <div id="spriteway_podcast">
                     <iframe id="podcast" src="https://open.spotify.com/embed-podcast/show/0JPIX8qXStBBqSFg6vVTUS" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <button>GO TO PODCAST</button>
+                    <button onclick="parent.open('https://open.spotify.com/show/0JPIX8qXStBBqSFg6vVTUS?si=NkAz-oqSTOqjR-oNMYDk2g')">GO TO PODCAST</button>
                 </div>
 
             </div>
@@ -140,6 +140,34 @@
 
         </section>
 
+
+
+        <section id="voting">
+
+            <div id="the_vote">
+                <div>Vote for your favorite flavor</div>
+
+                <button id="button_sprite"><img src="./assets/__sprite.png"></button>
+                <button id="button_sprite_zero"><img src="./assets/__sprite_zero.png"></button>
+                <button id="button_sprite_cherry"><img src="./assets/__sprite_cherry.png"></button>
+                <button id="button_sprite_cherry_zero_sugar"><img src="./assets/__sprite_cherry_zero.png"></button>
+                <button id="button_sprite_lymonade"><img src="./assets/__sprite-lymonade.png"></button>
+            </div>
+
+
+
+            <div id="the_results">
+                <div>See which flavor is leading in the polls</div>
+
+                <buttton id="voting_results">RESULTS</buttton>
+
+                <img src="./assets/questionmark.png" alt="poll results">
+
+            </div>
+
+
+        </section>
+        
     </main>
 
     <footer>
@@ -237,17 +265,37 @@
     showSlides();
     
     function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("slide");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
+        let i;
+        var slides = document.getElementsByClassName("slide");
 
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 4000);
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {slideIndex = 1}
+
+        slides[slideIndex-1].style.display = "block";
+
+        setTimeout(showSlides, 4000);
     }
+
+
+
+    
+    function castVote() {
+        let i;
+
+
+
+
+
+
+    }
+
+
+
 
 
 </script>
