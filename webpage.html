@@ -117,25 +117,26 @@
 
         <section id="media_music">
 
-            <table id="music_table">
-                
-                <div id="part1">
-                    <tr>
-                    <td><img src="./assets/sprite_way_lockup.png" alt="Sprite Way logo"></td>
-                    <td><iframe src="https://open.spotify.com/embed/playlist/0F9GnzKQchH4mZ56dysDJa" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-                    <td><iframe src="https://open.spotify.com/embed-podcast/show/0JPIX8qXStBBqSFg6vVTUS" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-                    </tr>
+    
+            <div id="music_content">
+
+                <div id="sprite_way">
+                    <img id="sprite_way_logo" src="./assets/sprite_way_lockup.png" alt="Sprite Way logo">
+                    <p id="spriteway_text">You know them - The ones who are always in the studio,opening shows and dropping new heat all the time. those big dreamers who are ready for the big stage. Yeah, them. Sprite Way wants to take them to thge next level. By nominating artists to our major community generated playlist, we can turn up mthier volume so loud, the whole world will hear. Let us know who you think deserves to shine - we're putting you in control.</p>
                 </div>
 
-                <div id="part2">
-                    <tr>
-                    <td><p>You know them - The ones who are always in the studio,opening shows and dropping new heat all the time. those big dreamers who are ready for the big stage. Yeah, them. Sprite Way wants to take them to thge next level. By nominating artists to our major community generated playlist, we can turn up mthier volume so loud, the whole world will hear. Let us know who you think deserves to shine - we're putting you in control.</p></td>
-                    <td><button>VISIT OUR PLAYLIST</button></td>
-                    <td><button>GO TO PODCAST</button</td>
-                    </tr>
+                <div id="spotify_playlist">
+                    <iframe src="https://open.spotify.com/embed/playlist/0F9GnzKQchH4mZ56dysDJa" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <button>VISIT OUR PLAYLIST</button>
                 </div>
 
-            </table>
+                <div id="spriteway_podcast">
+                    <iframe id="podcast" src="https://open.spotify.com/embed-podcast/show/0JPIX8qXStBBqSFg6vVTUS" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <button>GO TO PODCAST</button>
+                </div>
+
+            </div>
+
 
         </section>
 
@@ -176,7 +177,7 @@
         <img src="./assets/sprite_nav_logo.png" alt="Sprite logo">
 
 
-        <form
+        <form id="sprite_form"
             action="https://formspree.io/f/myybeqgp"
             method="POST">
             <p>Sign up for our newsletter</p>
@@ -212,6 +213,12 @@
 
     </footer>
 
+
+
+
+
+
+    <script src="./javascript.js"></script>
 </body>
 </html>
 

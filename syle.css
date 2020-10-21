@@ -115,33 +115,30 @@ nav ul {
 
 #most_wanted {
     background-image: url(./assets/most_wanted_background.PNG);
-    height: 40rem;
-}
-
-#most_wanted {
     display: flex;
+    flex-direction: row;
 }
 
 #first_half {
     width: 50%;
-    display: block;
-    margin-left: 5%;
 }
 
 #seconf_half {
     width: 50%;
-    display: block;
 }
 
 #bottle {
-    height: 80%;
-    padding-left: 20%;
-    padding-top: 10%;
+    width: 35%;
+    margin-left: 32.5%;
+    margin-right: 32.5%;
+    padding-top: 3rem;
 }
 
 #thirsts_text {
-    height: 17rem;
-    padding: 30% 10% 4.5% 10%;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #buy_now_button {
@@ -150,9 +147,10 @@ nav ul {
     border: solid 1px white;
     padding: 0.5rem;
     background-image: url(./assets/most_wanted_background.PNG);
-    width: 8rem;
-    height: 2.5rem;
-    margin: 5% 100% 0% 35%;
+    
+    width: 35%;
+    margin-left: 32.5%;
+    margin-right: 32.5%;
 }
 
 
@@ -195,51 +193,82 @@ nav ul {
 
 #media_music {
     background-image: url(./assets/Gray-texture-backgrounds.jpg);
-    display: block;
-    color: black;
+    color: rgb(0, 150, 57);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: 900;
+    text-align: center;
 }
 
-#music_table {
+#music_content {
+    height: 45rem;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    display: block;
+    display: flex;
 }
 
-#part1 {
-    width: 40%;
+#sprite_way {
+    width: 50%;
+    margin-top: 3rem;
+}
+#spriteway_text {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-width: 20rem;
 }
 
-#part2 {
-    width: 60%;
-}
-
-
-#music_table img {
+#music_content img {
     width: 80%;
+    margin-left: 5%;
+    margin-right: 15%;
+    min-width: 20rem;
 }
 
-#music_table p{
+#spotify_playlist {
+    width: 18.75rem;
+}
+
+#spriteway_podcast {
+    width: 18.75rem;
+    margin-left: 5%;
+}
+
+#podcast {
+    height: 14.5rem;
+}
+
+#music_content p{
     width: 80%;
-    font-weight: 900;
-    font-size: large;
+    margin-bottom: 2rem;
 }
 
-#music_table iframe {
+#music_content iframe {
     margin-top:10% ;
 }
 
-#music_table button {
+#music_content button {
     color: white;
     background-color: rgb(0, 150, 57);
     border: solid 2px black;
     height: 4rem;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 7.75rem;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
     font-weight: 900;
     font-size: large;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -276,11 +305,24 @@ footer {
     display: block;
 }
 
+#sprite_form {
+    margin-top: -5rem;
+    padding-left: 20%;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
 #very_bottom {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
+}
+
+#flavors {
+    margin-top: -8rem;
+    padding-left: 60%;
+    padding-bottom: 3rem;
 }
 
 footer #copyright{
@@ -302,10 +344,129 @@ footer #copyright{
 
 
 
-/*everything been set up for 1200 px plus*/
+/*everything been set up for 1300 px plus*/
 
 /*next break from 1200px to 600px*/
 
 /*last break is 600px and below*/
 
 
+@media (max-width: 1300px) {
+
+    #music_content {
+        height: 60rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #sprite_way{
+        height: 100%;
+    }
+    #spotify_playlist {
+        height: 50;
+    }
+    #spriteway_podcast {
+        height: 50;
+        margin-left: 0%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 750px) {
+
+
+    #insperational_table {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #most_wanted {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    #first_half {
+        width: 100%;
+    }
+    
+    #seconf_half {
+        width: 100%;
+        display: block;
+    }
+    
+    #bottle {
+        width: 25%;
+        margin-left: 37.5%;
+        margin-right: 37.5%;
+    }
+    #thirsts_text {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 1rem;
+    }
+    
+    #buy_now_button {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 1rem;
+    }
+
+
+    #music_content {
+        height: 77rem;
+        display: block;
+        font-size: medium;
+    }
+    #sprite_way {
+        width: 100%;
+    }
+    #spotify_playlist {
+        margin-top: -52.5rem;
+        width: 95%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #spriteway_podcast {
+        margin-top: -2rem;
+        width: 95%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+
+
+    #sprite_form {
+        margin-top: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+
+
+}
